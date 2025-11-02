@@ -1,0 +1,85 @@
+// Inspired by Catnap
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "type": "small",
+        "padding": {
+            "top": 1
+        }
+    },
+    "display": {
+        "separator": " " // keep single-line separator to preserve your box look
+    },
+    "modules": [
+        { "type": "custom", "key": "╭───────────╮" },
+
+        {
+            "type": "title",
+            "key": "│ {#31}- user    {#keys}│",
+            "format": "{user-name}"
+        },
+        {
+            "type": "title",
+            "key": "│ {#32}- hname   {#keys}│",
+            "format": "{host-name}"
+        },
+        {
+            "type": "uptime",
+            "key": "│ {#33}- uptime  {#keys}│"
+        },
+        {
+            "type": "os",
+            "key": "│ {#34}- distro  {#keys}│"
+        },
+        {
+            "type": "kernel",
+            "key": "│ {#35}- kernel  {#keys}│"
+        },
+        {
+            "type": "wm",
+            "key": "│ {#36}- wm      {#keys}│"
+        },
+        {
+            "type": "terminal",
+            "key": "│ {#31}- term    {#keys}│"
+        },
+        {
+            "type": "memory",
+            "key": "│ {#36}- memory  {#keys}│"
+        },
+
+        {
+            "type": "packages",
+            "key": "│ {#33}- pkgs    {#keys}│"
+        },
+        { "type": "custom", "key": "├───────────┤" },
+
+        {
+            "type": "colors",
+            "key": "│ {#39}- colors  {#keys}│",
+            "symbol": "circle"
+        },
+
+        { "type": "custom", "key": "╰───────────╯" }
+
+        /* -----------------------------
+           Optional modules — uncomment one at a time
+           if you want them (safe; they won't run while commented).
+           Uncomment only if you're sure your fastfetch build supports them.
+           ----------------------------- */
+
+
+        // Packages (uncomment if supported by your fastfetch version)
+
+       
+
+        // Screen resolution (uncomment if 'resolution' module exists)
+        /*,
+        {
+            "type": "resolution",
+            "key": "│ {#31} screen  {#keys}│"
+        }
+        */
+    ]
+}
+
